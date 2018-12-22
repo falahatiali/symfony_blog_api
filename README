@@ -1,0 +1,42 @@
+******
+        SYMFONY BLOG
+******
+
+This project is a sample for blog that written by Symfony framework and it contains api-platform
+it consists BlogPost Entity, Comment, User and Image
+
+User Authenticated by JWT token and services are complete
+
+SAMPLE URLS:
+    GET : /api/blog_posts => all of the posts
+    POST: /api/blog_posts => Create new Entity
+            {
+              "title": "string",
+              "content": "string",
+              "slug": "string",
+              "images": [
+                "string"
+              ]
+            }
+
+    GET: /api/blog_posts/{id} => Retrieve a BlogPost resource
+    PUT : /api/blog_posts/{id}
+           {
+             "title": "string",
+             "content": "string",
+             "slug": "string",
+             "images": [
+               "string"
+             ]
+           }
+    GET : /api/blog_posts/{id}/images => Retrieves the collection of Image resources.
+    GET : /api/blog_posts/{id}/comments => Retrieves the collection of Comment resources.
+
+    after clone this project you should run this commands:
+       1-  composer install
+       2-  php -S 127.0.0.1:8000 -t public/
+
+
+    You can see all services in http://127.0.0.1:8000/api
+
+Best wishes
